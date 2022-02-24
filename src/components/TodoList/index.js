@@ -41,7 +41,7 @@ export default function TodoList() {
           <Input value={todoName} onChange={(e) => setTodoName(e.target.value)} />
           <Select defaultValue='Medium' value={priority} onChange={(e) => setPriority(e)}>
             <Select.Option value='High' label='High'>
-              <Tag color='pink'>High</Tag> 
+              <Tag color='red'>High</Tag> 
             </Select.Option>
             <Select.Option value='Medium' label='Medium'>
               <Tag color='blue'>Medium</Tag>

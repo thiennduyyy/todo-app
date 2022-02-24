@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { statusTodoChange } from '../../redux/actions';
 
 const priorityColorMapping = {
-  High: 'pink',
+  High: 'red',
   Medium: 'blue',
   Low: 'black',
 };

@@ -19,15 +19,18 @@ export default function TodoList() {
   
 
   const handleAddButtonClick = () => {
-    dispatch(addTodo({
-      id: uuidv4(),
-      name:todoName,
-      priority: priority,
-      completed: false
-    }));
+    if (todoName) {
 
-    setPriority('Low')
-    setTodoName('')
+      dispatch(addTodo({
+        id: uuidv4(),
+        name:todoName,
+        priority: priority,
+        completed: false
+      }));
+      
+      setPriority('Low')
+      setTodoName('')
+    }
   };
 
   
